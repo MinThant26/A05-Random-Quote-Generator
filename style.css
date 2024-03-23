@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    place-items: center;
+    background-color: #bbc6fa;
+}
+.quote-box{
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+.quote-box .quote{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 30px;
+}
+.quote .content{
+    font-size: 25px;
+}
+.quote .author{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+.author .line{
+    padding: 1px 10px;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+}
+.quote-box .buttons{
+    margin-top: 30px;
+}
+.buttons button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor: pointer;
+}
+.buttons button:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.project-info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
